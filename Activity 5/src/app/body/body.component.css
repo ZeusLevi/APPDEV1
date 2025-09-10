@@ -1,0 +1,73 @@
+.counter-container {
+  text-align: center;
+  margin: 2.5rem auto;
+  padding: 2.2rem 2.5rem;
+  border: 2px solid #90caf9;
+  background: #f5fafd;
+  border-radius: 12px;
+  max-width: 560px;
+  box-shadow: 0 4px 16px rgba(33,150,243,0.07);
+  font-family: Arial, sans-serif;
+}
+
+.counter-value {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.positive {
+  color: #2e7d32; /* Green for positive numbers */
+}
+
+.negative {
+  color: #c62828; /* Red for negative numbers */
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-increment {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-decrement {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-randomize {
+  background-color: #ffb300;
+  color: #fff;
+}
+
+.btn-reset {
+  background-color: #607d8b;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-randomize:hover {
+  background-color: #ffa000;
+}
+
+.btn-reset:hover {
+  background-color: #455a64;
+}

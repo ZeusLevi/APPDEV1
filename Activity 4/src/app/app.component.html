@@ -1,0 +1,7 @@
+<div class="app-container">
+  <h1>Color Changer</h1>
+  <div class="color-display" [style.background]="currentColor()"></div>
+  <button (click)="changeColor()">Change Color</button>
+  <p>Current Color: {{ currentColor() }}</p>
+</div>
+<router-outlet />

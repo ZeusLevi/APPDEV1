@@ -1,0 +1,107 @@
+<div class="profile-container">
+    <section class="profile-header">
+        <h1>{{product.model}} Product Manual</h1>
+        <h2>Mechanical Keyboard Documentation</h2>
+        <p class="about">{{product.overview}}</p>
+    </section>
+
+    <section class="profile-section">
+        <h3>Specifications</h3>
+        <ul>
+            <li *ngFor="let spec of product.specifications">
+                <strong>{{spec.label}}:</strong> {{spec.value}}
+            </li>
+        </ul>
+    </section>
+
+    <section class="profile-section">
+        <h3>In the Box</h3>
+        <ul>
+            <li *ngFor="let item of product.inBox">{{item}}</li>
+        </ul>
+    </section>
+
+    <section class="profile-section">
+        <h3>Key Features</h3>
+        <ul>
+            <li *ngFor="let feature of product.features">{{feature}}</li>
+        </ul>
+    </section>
+
+    <section class="profile-section">
+        <h3>Setup Instructions</h3>
+        <h4>Unboxing:</h4>
+        <ul>
+            <li *ngFor="let step of product.setup.unboxing">{{step}}</li>
+        </ul>
+        <h4>Connecting the Keyboard:</h4>
+        <ul>
+            <li *ngFor="let step of product.setup.connecting">{{step}}</li>
+        </ul>
+        <h4>Software Installation (Optional):</h4>
+        <ul>
+            <li *ngFor="let step of product.setup.software">{{step}}</li>
+        </ul>
+        <h4>Keycap Removal and Replacement:</h4>
+        <ul>
+            <li *ngFor="let step of product.setup.keycap">{{step}}</li>
+        </ul>
+    </section>
+
+    <section class="profile-section">
+        <h3>Using the Keyboard</h3>
+        <h4>Basic Typing:</h4>
+        <ul>
+            <li *ngFor="let step of product.usage.typing">{{step}}</li>
+        </ul>
+        <h4>Customizing Backlighting:</h4>
+        <ul>
+            <li *ngFor="let step of product.usage.backlighting">{{step}}</li>
+        </ul>
+        <h4>Programming Keys:</h4>
+        <ul>
+            <li *ngFor="let step of product.usage.programming">{{step}}</li>
+        </ul>
+        <h4>Using Media Controls:</h4>
+        <ul>
+            <li *ngFor="let step of product.usage.media">{{step}}</li>
+        </ul>
+    </section>
+
+    <section class="profile-section">
+        <h3>Troubleshooting</h3>
+        <div *ngFor="let issue of product.troubleshooting">
+            <h4>{{issue.issue}}</h4>
+            <ul>
+                <li *ngFor="let step of issue.steps">{{step}}</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="profile-section">
+        <h3>Maintenance and Care</h3>
+        <h4>Cleaning:</h4>
+        <ul>
+            <li *ngFor="let step of product.maintenance.cleaning">{{step}}</li>
+        </ul>
+        <h4>Storage:</h4>
+        <ul>
+            <li *ngFor="let step of product.maintenance.storage">{{step}}</li>
+        </ul>
+    </section>
+
+    <section class="profile-section">
+        <h3>Warranty and Support</h3>
+        <p><strong>Warranty Period:</strong> {{product.warranty.period}}</p>
+        <ul>
+            <li *ngFor="let support of product.warranty.support">{{support}}</li>
+        </ul>
+        <p><strong>Manufacturer’s Website:</strong> {{product.warranty.website}}</p>
+        <p><strong>Customer Support Email:</strong> {{product.warranty.email}}</p>
+        <p><strong>Support Hotline:</strong> {{product.warranty.hotline}}</p>
+    </section>
+
+    <section class="profile-section">
+        <p style="text-align:center; font-weight:bold;">{{product.thankYou}}</p>
+    </section>
+</div>
