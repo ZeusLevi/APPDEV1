@@ -1,0 +1,12 @@
+<div class="quote-container">
+    <div class="quote-card">
+      <h2>{{ currentQuote.book }}</h2>
+      <p class="quote-text">"{{ currentQuote.body }}"</p>
+      <div class="navigation-buttons">
+        <button (click)="decrement()">Previous</button>
+        <span class="quote-counter">{{ currentIndex + 1 }}</span>
+        <button (click)="increment()">Next</button>
+      </div>
+    </div>
+  </div>
+  

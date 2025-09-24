@@ -1,0 +1,53 @@
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+  }
+  
+  .quote-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .quote-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    color: #333;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a6fa5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #3a5a80;
+  }
+  
+  .quote-counter {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
