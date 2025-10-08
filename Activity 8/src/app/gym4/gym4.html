@@ -1,0 +1,31 @@
+<div class="center-container">
+  <div class="image-container">
+    <img src="Morty.jpg" alt="Morty">
+    <h1>{{ morty.name }}</h1>
+  </div>
+
+  <div class="right-content">
+    <div class="description-container">
+      <p>{{ morty.description }}</p>
+    </div>
+
+    <div class="type-badge-row">
+      <div class="type-container">
+        <p>{{ morty.type }}</p>
+      </div>
+      <div class="badge-container">
+        <img src="Zephyr.png" alt="Zephyr Badge">
+        <p>{{ morty.badge }}</p>
+      </div>
+    </div>
+
+    <div class="pokemon-container">
+      <p>Pokémon they use:</p>
+      <ul class="pokemon-list">
+        @for (pokemon of morty.pokemon; track pokemon) {
+          <li>{{ pokemon }}</li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>

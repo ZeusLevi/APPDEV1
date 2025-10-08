@@ -1,0 +1,95 @@
+<h1>Pokemon Trainer Registration Form: </h1>
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name" />
+    <br />
+
+    <label for="age">Age:</label>
+    <input type="text" id="age" formControlName="age" />
+    <br />
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" formControlName="address" />
+    <br />
+
+    <label for="favoritePokemon">Favorite Pokemon:</label>
+    <input type="text" id="favoritePokemon"
+formControlName="favoritePokemon" />
+    <br />
+
+    <label for="slot1">Slot 1:</label>
+    <input type="text" id="slot1" formControlName="slot1" />
+    <br />
+
+    <label for="slot2">Slot 2:</label>
+    <input type="text" id="slot2" formControlName="slot2" />
+    <br />
+
+    <label for="slot3">Slot 3:</label>
+    <input type="text" id="slot3" formControlName="slot3" />
+    <br />
+
+    <label for="slot4">Slot 4:</label>
+    <input type="text" id="slot4" formControlName="slot4" />
+    <br />
+
+    <label for="slot5">Slot 5:</label>
+    <input type="text" id="slot5" formControlName="slot5" />
+    <br />
+
+    <label for="slot6">Slot 6:</label>
+    <input type="text" id="slot6" formControlName="slot6" />
+    <br />
+
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Pokemon Trainer Real-Time Values: </h2>
+<div class="label">Name: </div>
+<div class="value">{{ formGroup.get('name')?.value }}</div>
+<div class="label">Age: </div>
+<div class="value">{{ formGroup.get('age')?.value }}</div>
+<div class="label">Address: </div>
+<div class="value">{{ formGroup.get('address')?.value }}</div>
+<div class="label">Favorite Pokemon: </div>
+<div class="value">{{ formGroup.get('favoritePokemon')?.value}}</div>
+<div class="label">Slot 1: </div>
+<div class="value">{{ formGroup.get('slot1')?.value }}</div>
+<div class="label">Slot 2: </div>
+<div class="value">{{ formGroup.get('slot2')?.value }}</div>
+<div class="label">Slot 3: </div>
+<div class="value">{{ formGroup.get('slot3')?.value }}</div>
+<div class="label">Slot 4: </div>
+<div class="value">{{ formGroup.get('slot4')?.value }}</div>
+<div class="label">Slot 5: </div>
+<div class="value">{{ formGroup.get('slot5')?.value }}</div>
+<div class="label">Slot 6: </div>
+<div class="value">{{ formGroup.get('slot6')?.value }}</div>
+
+<br />
+<h2>Pokemon Trainer List: </h2>
+@for (trainer of trainerList; track $index;) {
+    <div>
+        <div class="label">Name:</div> <div class="value">{{
+trainer.name }}</div>
+        <div class="label">Age:</div> <div class="value">{{
+trainer.age }}</div>
+        <div class="label">Address:</div> <div class="value">{{
+trainer.address }}</div>
+        <div class="label">Favorite Pokemon:</div> <div
+class="value">{{ trainer.favoritePokemon }}</div>
+        <div class ="label">Slot 1: </div> <div class="value">{{
+trainer.slot1 }}</div>
+        <div class ="label">Slot 2: </div> <div class="value">{{
+trainer.slot2 }}</div>
+        <div class ="label">Slot 3: </div> <div class="value">{{  
+trainer.slot3 }}</div>
+        <div class ="label">Slot 4: </div> <div class="value">{{  
+trainer.slot4 }}</div>
+        <div class ="label">Slot 5: </div> <div class="value">{{  
+trainer.slot5 }}</div>
+        <div class ="label">Slot 6: </div> <div class="value">{{    
+trainer.slot6 }}</div>
+    </div>
+    
+}

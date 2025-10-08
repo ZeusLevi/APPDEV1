@@ -1,0 +1,47 @@
+<h1>Pokemon Trainer Registration Form: </h1>
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name" />
+    <br />
+
+    <label for="age">Age:</label>
+    <input type="text" id="age" formControlName="age" />
+    <br />
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" formControlName="address" />
+    <br />
+
+    <label for="favoritePokemon">Favorite Pokemon:</label>
+    <input type="text" id="favoritePokemon"
+formControlName="favoritePokemon" />
+    <br />
+
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Pokemon Trainer Real-Time Values: </h2>
+<div class="label">Name: </div>
+<div class="value">{{ formGroup.get('name')?.value }}</div>
+<div class="label">Age: </div>
+<div class="value">{{ formGroup.get('age')?.value }}</div>
+<div class="label">Address: </div>
+<div class="value">{{ formGroup.get('address')?.value }}</div>
+<div class="label">Favorite Pokemon: </div>
+<div class="value">{{ formGroup.get('favoritePokemon')?.value
+}}</div>
+
+<br />
+<h2>Pokemon Trainer List: </h2>
+@for (trainer of trainerList; track $index;) {
+    <div>
+        <div class="label">Name:</div> <div class="value">{{
+trainer.name }}</div>
+    <div class="label">Age:</div> <div class="value">{{
+trainer.age }}</div>
+    <div class="label">Address:</div> <div class="value">{{
+trainer.address }}</div>
+    <div class="label">Favorite Pokemon:</div> <div
+class="value">{{ trainer.favoritePokemon }}</div>
+    </div>
+}

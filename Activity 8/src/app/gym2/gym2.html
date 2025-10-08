@@ -1,0 +1,31 @@
+<div class="center-container">
+  <div class="image-container">
+    <img src="Bugsy.jpg" alt="Bugsy">
+    <h1>{{ bugsy.name }}</h1>
+  </div>
+
+  <div class="right-content">
+    <div class="description-container">
+      <p>{{ bugsy.description }}</p>
+    </div>
+
+    <div class="type-badge-row">
+      <div class="type-container">
+        <p>{{ bugsy.type }}</p>
+      </div>
+      <div class="badge-container">
+        <img src="Hive.png" alt="Hive Badge">
+        <p>{{ bugsy.badge }}</p>
+      </div>
+    </div>
+
+    <div class="pokemon-container">
+      <p>Pokémon they use:</p>
+      <ul class="pokemon-list">
+        @for (pokemon of bugsy.pokemon; track pokemon) {
+          <li>{{ pokemon }}</li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>
