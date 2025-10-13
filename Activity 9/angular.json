@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Activity9": {
+    "act9": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -66,10 +66,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Activity9:build:production"
+              "buildTarget": "act9:build:production"
             },
             "development": {
-              "buildTarget": "Activity9:build:development"
+              "buildTarget": "act9:build:development"
             }
           },
           "defaultConfiguration": "development"
