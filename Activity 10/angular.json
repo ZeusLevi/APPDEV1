@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Activity-10": {
+    "Act10": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -35,6 +35,7 @@
               }
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ]
           },
@@ -66,10 +67,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Activity-10:build:production"
+              "buildTarget": "Act10:build:production"
             },
             "development": {
-              "buildTarget": "Activity-10:build:development"
+              "buildTarget": "Act10:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,31 @@
+<div class="center-container">
+  <div class="image-container">
+    <img src="Jasmine.jpg" alt="Jasmine">
+    <h1>{{ jasmine.name }}</h1>
+  </div>
+
+  <div class="right-content">
+    <div class="description-container">
+      <p>{{ jasmine.description }}</p>
+    </div>
+
+    <div class="type-badge-row">
+      <div class="type-container">
+        <p>{{ jasmine.type }}</p>
+      </div>
+      <div class="badge-container">
+        <img src="Mineral.png" alt="Mineral Badge">
+        <p>{{ jasmine.badge }}</p>
+      </div>
+    </div>
+
+    <div class="pokemon-container">
+      <p>Pokémon they use:</p>
+      <ul class="pokemon-list">
+        @for (pokemon of jasmine.pokemon; track pokemon) {
+          <li>{{ pokemon }}</li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>
