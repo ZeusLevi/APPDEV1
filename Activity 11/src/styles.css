@@ -1,6 +1,6 @@
 :root {
 
-  --sidebar-width: 200px;
+  --sidebar-width: 245px;
 }
 
 @media (max-width: 768px) {
@@ -36,5 +36,8 @@ li {
   color: inherit;
   line-height: 1.6;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

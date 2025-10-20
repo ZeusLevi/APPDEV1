@@ -7,11 +7,18 @@ import { Router } from '@angular/router';
   templateUrl: './sidebar.html',
   styleUrl: './sidebar.css'
 })
-    export class Sidebar {
-    @Input() title: string = '';
-    private router = inject(Router);
+export class Sidebar {
+  @Input() title: string = '';
+  private router = inject(Router);
 
-    navigateToHome() {
-      this.router.navigate(['/']);
-    }
+  isDropdownOpen = false;
+
+  navigateToHome() {
+    this.router.navigate(['/']);
+  }
+
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
 }
+

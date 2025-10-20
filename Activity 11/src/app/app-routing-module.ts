@@ -12,6 +12,12 @@ import { Home } from './home/home';
 import { TrainerForm } from './trainer-form/trainer-form';
 import { Berries } from './berries/berries';
 import { Pokeballs } from './pokeballs/pokeballs';
+import { Typhlosion } from './typhlosion/typhlosion';
+import { Crobat } from './crobat/crobat';
+import { Quagsire } from './quagsire/quagsire';
+import { Hitmontop } from './hitmontop/hitmontop';
+import { Espeon } from './espeon/espeon';
+import { Tyranitar } from './tyranitar/tyranitar';
 
 const routes: Routes = [
   { path: '', component: Home, pathMatch: 'full' },
@@ -25,7 +31,13 @@ const routes: Routes = [
   { path: 'gym8', component: Gym8 },
   { path: 'trainer-form', component: TrainerForm },
   { path: 'berries', component: Berries },
-  { path: 'pokeballs', component: Pokeballs}
+  { path: 'pokeballs', component: Pokeballs },
+  { path: 'typhlosion', component: Typhlosion },
+  { path: 'crobat', component: Crobat },
+  { path: 'quagsire', component: Quagsire },
+  { path: 'hitmontop', component: Hitmontop },
+  { path: 'espeon', component: Espeon },
+  { path: 'tyranitar', component: Tyranitar }
 ];
 
 @NgModule({

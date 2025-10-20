@@ -11,6 +11,12 @@ import { Gym8 } from './gym8/gym8';
 import { TrainerForm } from './trainer-form/trainer-form';
 import { Berries } from './berries/berries';
 import { Pokeballs } from './pokeballs/pokeballs';
+import { Typhlosion } from './typhlosion/typhlosion';
+import { Crobat } from './crobat/crobat';
+import { Quagsire } from './quagsire/quagsire';
+import { Hitmontop } from './hitmontop/hitmontop';
+import { Espeon } from './espeon/espeon';
+import { Tyranitar } from './tyranitar/tyranitar';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +25,7 @@ import { Pokeballs } from './pokeballs/pokeballs';
   styleUrl: './app.css'
 })
 export class App {
-  Title = 'Activity-10';
+  Title = 'Activity-11';
 
   onRouteActivate(component: any) {
     if (component instanceof Gym1) {
@@ -44,6 +50,18 @@ export class App {
       this.Title = "Berries";
     } else if (component instanceof Pokeballs) {
       this.Title = "Pokeballs"
+    } else if (component instanceof Typhlosion) {
+      this.Title = "Typhlosion"
+    } else if (component instanceof Crobat) {
+      this.Title = "Crobat"
+    } else if (component instanceof Quagsire) {
+      this.Title = "Quagsire"
+    } else if (component instanceof Hitmontop) {
+      this.Title = "Hitmontop"
+    } else if (component instanceof Espeon) {
+      this.Title = "Espeon"
+    } else if (component instanceof Tyranitar) {
+      this.Title = "Tyranitar"
     } else {
       this.Title = "Home";
     }

@@ -17,6 +17,14 @@ import { Home } from './home/home';
 import { TrainerForm } from './trainer-form/trainer-form';
 import { Berries } from './berries/berries';
 import { Pokeballs } from './pokeballs/pokeballs';
+import { HttpClientModule } from '@angular/common/http';
+import { Quagsire } from './quagsire/quagsire'; 
+import { Typhlosion } from './typhlosion/typhlosion';
+import { Hitmontop } from './hitmontop/hitmontop';
+import { Tyranitar } from './tyranitar/tyranitar';
+import { Crobat } from './crobat/crobat';
+import { Espeon } from './espeon/espeon';
+import { TitleCasePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -33,12 +41,21 @@ import { Pokeballs } from './pokeballs/pokeballs';
     Home,
     Berries,
     Pokeballs,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatTableModule,
-    TrainerForm
+    TrainerForm,
+    HttpClientModule,
+    Crobat,
+    Quagsire,
+    Typhlosion,
+    Hitmontop,
+    Tyranitar,
+    Espeon,
+    TitleCasePipe
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

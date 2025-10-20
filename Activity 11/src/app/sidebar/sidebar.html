@@ -11,9 +11,21 @@
     <li><a routerLink="/trainer-form" routerLinkActive="active">Trainer Form</a></li>
     <li><a routerLink="/berries" routerLinkActive="active">Berries</a></li>
     <li><a routerLink="/pokeballs" routerLinkActive="active">Pokeballs</a></li>
+
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" (click)="toggleDropdown()"> Favorite Pokemons</a>
+      <ul class="dropdown-content" [class.show]="isDropdownOpen">
+        <li><a routerLink="/typhlosion" routerLinkActive="active">Typhlosion</a></li>
+        <li><a routerLink="/crobat" routerLinkActive="active">Crobat</a></li>
+        <li><a routerLink="/quagsire" routerLinkActive="active">Quagsire</a></li>
+        <li><a routerLink="/hitmontop" routerLinkActive="active">Hitmontop</a></li>
+        <li><a routerLink="/espeon" routerLinkActive="active">Espeon</a></li>
+        <li><a routerLink="/tyranitar" routerLinkActive="active">Tyranitar</a></li>
+      </ul>
+    </li>
   </ul>
 </div>
 
 <h1>{{ title }}</h1>
 
-<button class = "button" (click)="navigateToHome()">Home</button>
+<button class="button" (click)="navigateToHome()">Home</button>
