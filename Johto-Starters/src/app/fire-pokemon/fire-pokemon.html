@@ -1,0 +1,15 @@
+<div class="pokemon-card" *ngIf="currentPokemon">
+  <h1>{{ currentPokemon.name }}</h1>
+  <img [src]="currentPokemon.image" [alt]="currentPokemon.name" />
+
+  <p>HP: {{ currentPokemon.hp }}</p>
+  <p>Attack: {{ currentPokemon.attack }}</p>
+  <p>Defense: {{ currentPokemon.defense }}</p>
+  <p>Special Attack: {{ currentPokemon.sp_attack }}</p>
+  <p>Special Defense: {{ currentPokemon.sp_defense }}</p>
+  <p>Speed: {{ currentPokemon.speed }}</p>
+  <p>Type: {{ type }}</p>
+
+  <button (click)="revert()" [disabled]="!fireService.getPrev(currentName)">Revert</button>
+  <button (click)="evolve()" [disabled]="!fireService.getNext(currentName)">Evolve</button>
+</div>

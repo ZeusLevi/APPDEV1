@@ -1,0 +1,25 @@
+@if (!loading) {
+    <div class="food-container">
+      @for (meal of foods; track meal.idMeal) {
+        <mat-card class="food-card">
+          <mat-card-header>
+            <mat-card-title>{{ meal.strMeal }}</mat-card-title>
+            <mat-card-subtitle>{{ meal.strCategory }} — {{ meal.strArea }}</mat-card-subtitle>
+          </mat-card-header>
+  
+          <img mat-card-image [src]="meal.strMealThumb" [alt]="meal.strMeal">
+  
+          <mat-card-content>
+            <p>{{ meal.strInstructions }}</p>
+          </mat-card-content>
+        </mat-card>
+      }
+    </div>
+  }
+  @else {
+    <div class="loading">
+      <mat-progress-bar mode="indeterminate" color="accent"></mat-progress-bar>
+      <p>Loading food list...</p>
+    </div>
+  }
+  

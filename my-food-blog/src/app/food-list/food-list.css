@@ -1,0 +1,26 @@
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .food-card {
+    transition: transform 0.2s ease;
+  }
+  
+  .food-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  mat-progress-bar {
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+  
